@@ -1,10 +1,15 @@
 import React from 'react';
 
 class Login extends React.Component {
+    handleClick(event){
+        event.preventDefault();
+        alert('Clicked');
+    }
     render() {
         // return <p>Login Component</p>; // 在js寫html的寫法稱為JSX，需要使用Babel轉碼器
         return (
             <div className="login-wrapper">
+                <a href="/login" className="button" onClick={this.handleClick}>Click Me</a>
                 <form className="box login-box">
                     <div className="field"> 
                         <label htmlFor="" className="label">Email</label>
