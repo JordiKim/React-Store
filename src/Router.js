@@ -5,13 +5,13 @@ import Login from 'components/Login';
 import NotFound from 'components/NotFound';
 
 const Router = () => (
-    <BrowserRouter>
-        <Routes>
-            <Route path="/" exact element={<App/>}/>
-            <Route path="/login" element={<Login/>}/>
-            <Route path="*" element={<NotFound/>}/>
-        </Routes>
-    </BrowserRouter>
+        <BrowserRouter>
+            <Routes>
+                <Route path="/" element={<App/>}/>
+                <Route path="/login" element={<Login/>}/>
+                <Route path="*" element={<NotFound/>}/>
+            </Routes>
+        </BrowserRouter>
 )
 
 export default Router;
