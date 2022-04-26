@@ -1,9 +1,6 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
-class Login extends React.Component {
-    // function handleClick() {  
-    //     navigate('/home');  
-    // };  
+class Login extends React.Component { 
 
     handleSubmit = event => {
         let navigate = useNavigate();
@@ -16,8 +13,6 @@ class Login extends React.Component {
 
         //  4.跳轉首頁視圖
         // this.props.history.push('/');
-        // this.navigate('/login');  
-        navigate('/', { replace: true });
     }
 
     // MyButton() {  
